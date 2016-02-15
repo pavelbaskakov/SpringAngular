@@ -1,0 +1,6 @@
+<div>
+    <span>User name</span>
+    <input ng-model="user.name"/>
+    <button ng-click="addNewUser(user)">Add</button>
+</div>
+<div ng-repeat="user in users">{{user.name}}</div>
