@@ -46,6 +46,6 @@ public class CarController {
 
     @RequestMapping("/layout")
     public String getCarPartialPage() {
-        return "cars/layout";
+        return "/static/html/cars/layout";
     }
 }

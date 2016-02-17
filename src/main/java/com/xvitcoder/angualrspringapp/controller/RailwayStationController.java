@@ -48,6 +48,6 @@ public class RailwayStationController {
 
     @RequestMapping("/layout")
     public String getRailwayStationPartialPage(ModelMap modelMap) {
-        return "railwaystations/layout";
+        return "/static/html/railwaystations/layout";
     }
 }

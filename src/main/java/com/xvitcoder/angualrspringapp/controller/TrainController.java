@@ -49,6 +49,6 @@ public class TrainController {
 
     @RequestMapping("/layout")
     public String getTrainPartialPage(ModelMap modelMap) {
-        return "trains/layout";
+        return "/static/html/trains/layout";
     }
 }
