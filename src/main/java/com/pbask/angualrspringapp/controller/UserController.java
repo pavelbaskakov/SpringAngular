@@ -1,9 +1,10 @@
-package com.xvitcoder.angualrspringapp.controller;
+package com.pbask.angualrspringapp.controller;
 
 
-import com.xvitcoder.angualrspringapp.beans.User;
-import com.xvitcoder.angualrspringapp.dao.UserDao;
-import com.xvitcoder.angualrspringapp.service.UserService;
+import com.pbask.angualrspringapp.beans.User;
+import com.pbask.angualrspringapp.dao.UserDao;
+import com.pbask.angualrspringapp.daoentities.UsersEntity;
+import com.pbask.angualrspringapp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -36,12 +37,12 @@ public class UserController {
     }
 
     @RequestMapping(value = "/adduser/", method = RequestMethod.POST)
-    public @ResponseBody void addUser(@RequestBody User user) {
+    public @ResponseBody void addUser(@RequestBody UsersEntity user) {
         userDao.addUser(user);
     }
 
     @RequestMapping("/layout")
     public String getCarPartialPage() {
-        return "/static/html/cars/layout";
+        return "cars/layout";
     }
 }

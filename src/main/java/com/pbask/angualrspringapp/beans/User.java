@@ -1,4 +1,4 @@
-package com.xvitcoder.angualrspringapp.beans;
+package com.pbask.angualrspringapp.beans;
 
 /**
  * Created by Pavel on 10.02.2016.

@@ -1,4 +1,4 @@
-package com.xvitcoder.angualrspringapp.service;
+package com.pbask.angualrspringapp.service;
 
 import org.springframework.stereotype.Service;
 

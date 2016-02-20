@@ -1,7 +1,8 @@
-package com.xvitcoder.angualrspringapp.controller;
+package com.pbask.angualrspringapp.controller;
 
 import java.util.List;
 
+import com.pbask.angualrspringapp.beans.RailwayStation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,8 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.xvitcoder.angualrspringapp.beans.RailwayStation;
-import com.xvitcoder.angualrspringapp.service.RailwayStationServiceImpl;
+import com.pbask.angualrspringapp.service.RailwayStationServiceImpl;
 
 @Controller
 @RequestMapping("/railwaystations")
@@ -48,6 +48,6 @@ public class RailwayStationController {
 
     @RequestMapping("/layout")
     public String getRailwayStationPartialPage(ModelMap modelMap) {
-        return "/static/html/railwaystations/layout";
+        return "railwaystations/layout";
     }
 }

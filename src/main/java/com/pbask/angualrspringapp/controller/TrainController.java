@@ -1,7 +1,7 @@
-package com.xvitcoder.angualrspringapp.controller;
+package com.pbask.angualrspringapp.controller;
 
-import com.xvitcoder.angualrspringapp.beans.Train;
-import com.xvitcoder.angualrspringapp.service.TrainService;
+import com.pbask.angualrspringapp.service.TrainService;
+import com.pbask.angualrspringapp.beans.Train;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -49,6 +49,6 @@ public class TrainController {
 
     @RequestMapping("/layout")
     public String getTrainPartialPage(ModelMap modelMap) {
-        return "/static/html/trains/layout";
+        return "trains/layout";
     }
 }

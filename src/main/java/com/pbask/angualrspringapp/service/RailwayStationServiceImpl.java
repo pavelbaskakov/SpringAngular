@@ -1,11 +1,10 @@
-package com.xvitcoder.angualrspringapp.service;
+package com.pbask.angualrspringapp.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.pbask.angualrspringapp.beans.RailwayStation;
 import org.springframework.stereotype.Service;
-
-import com.xvitcoder.angualrspringapp.beans.RailwayStation;
 
 
 @Service("RailwayStationService")

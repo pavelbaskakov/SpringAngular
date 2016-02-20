@@ -1,9 +1,8 @@
-package com.xvitcoder.angualrspringapp.controller;
+package com.pbask.angualrspringapp.controller;
 
-import com.xvitcoder.angualrspringapp.service.CarService;
+import com.pbask.angualrspringapp.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -46,6 +45,6 @@ public class CarController {
 
     @RequestMapping("/layout")
     public String getCarPartialPage() {
-        return "/static/html/cars/layout";
+        return "cars/layout";
     }
 }

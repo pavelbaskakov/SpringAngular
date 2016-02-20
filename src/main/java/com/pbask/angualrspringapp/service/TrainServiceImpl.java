@@ -1,6 +1,6 @@
-package com.xvitcoder.angualrspringapp.service;
+package com.pbask.angualrspringapp.service;
 
-import com.xvitcoder.angualrspringapp.beans.Train;
+import com.pbask.angualrspringapp.beans.Train;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
